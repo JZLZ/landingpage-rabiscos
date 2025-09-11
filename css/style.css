@@ -7,7 +7,7 @@
 
 /* ===== GERAL ===== */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif, 'Anton';
   background: #000; /* fundo preto */
   color: #eee;
   text-align: center;
@@ -20,9 +20,9 @@ body {
 
 /* ===== HERO ===== */
 #hero {
-  background: url('../img/port3.jpg') no-repeat center center/cover;
+  background: url('../img/port4.jpeg') no-repeat center center/cover;
   color: #fff;
-  padding: 120px 20px;
+  padding: 95px 20px;
   position: relative;
 }
 
@@ -41,16 +41,22 @@ body {
 
 #hero .logo {
   max-width: 220px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  /*distancia do topo*/
+  margin-top: -40px;
 }
 
 #hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  font-weight: bold;
 }
 
-#hero p {
-  font-size: 1.2rem;
+#hero h2 {
+  position: relative;
+  color: white;
+  font-size: 1.6rem;
   margin-bottom: 25px;
 }
 
@@ -68,8 +74,14 @@ body {
 }
 
 .foto-circular img {
-  width: 100%;
-  height: 100%;
+  /*centralizar foto*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*ajustar tamanho*/
+  width: 150%;
+  height: 150%;
   object-fit: cover;
 }
 
@@ -95,7 +107,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   gap: 50px;
 }
 
@@ -104,6 +116,9 @@ body {
   text-align: left;
   font-size: 1.1rem;
   line-height: 1.7;
+  /*texto centralizado*/
+  margin: 0 20px;
+  text-align: justify;
 }
 
 /* ===== GRUPO VIP ===== */
@@ -150,6 +165,192 @@ body {
   padding: 18px 36px;
 }
 
+/* ======= SEÇÃO ORÇAMENTO ======= */
+#orcamento {
+  position: relative;
+  background: url('img/port1.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 40px auto;
+  color: white;
+  text-align: center;
+}
+
+/* Overlay */
+#orcamento .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 75%;
+  background: linear-gradient(to bottom, #A0522D, rgba(255,200,0,0) 100%);
+}
+
+/* Conteúdo */
+#orcamento .conteudo {
+  position: relative;
+  padding: 40px;
+  font-size: 2rem;
+}
+
+#orcamento h2 {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  margin-bottom: 65px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Botão */
+#orcamento .botao {
+  margin-top: 125px;
+  font-family: 'Anton', sans-serif;
+  display: inline-block;
+  background-color: #A0522D;
+  color: white;
+  font-weight: bold;
+  padding: 20px 35px;
+  font-size: 1em;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0px 10px 10px #AF6F33;
+}
+
+#orcamento .botao:hover {
+  background-color: #e65b50;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  #orcamento {
+    padding: 60px 15px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  #orcamento .botao {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  #orcamento {
+    padding: 40px 10px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  #orcamento .botao {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    padding: 12px 20px;
+  }
+}
+
+/* ======= SEÇÃO ORÇAMENTO ======= */
+#orcamento {
+  position: relative;
+  background: url('../img/port1.jpg') center/cover no-repeat;
+  padding: 50px 20px;   /* reduz o espaço interno */
+  padding: 80px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 40px auto;
+  color: white;
+  text-align: center;
+  min-height: 300px;    /* evita que fique exagerado */
+}
+
+/* Overlay */
+#orcamento .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 75%;
+  background: linear-gradient(to bottom, #A0522D, rgba(255,200,0,0) 100%);
+}
+
+/* Conteúdo */
+#orcamento .conteudo {
+  position: relative;
+  padding: 40px;
+  font-size: 2rem;
+}
+
+#orcamento h2 {
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  margin-bottom: 65px;
+  margin-top: -55px; /* reduz o espaço acima */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Botão */
+#orcamento .botao {
+  margin-top: 20px;
+  font-family: 'Anton', sans-serif;
+  display: inline-block;
+  background-color: #A0522D;
+  color: white;
+  font-weight: bold;
+  padding: 20px 35px;
+  font-size: 1em;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0px 10px 10px #AF6F33;
+}
+
+#orcamento .botao:hover {
+  background-color: #e65b50;
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+  #orcamento {
+    padding: 60px 15px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  #orcamento .botao {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  #orcamento {
+    padding: 40px 10px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  #orcamento .botao {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    padding: 12px 20px;
+  }
+}
+
+
 /* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
   .sobre-maysa-conteudo {
@@ -160,3 +361,4 @@ body {
     text-align: center;
   }
 }
+
