@@ -34,7 +34,10 @@ body {
   z-index: 0;
 }
 
-#hero h1, #hero p, #hero .btn-cta, #hero img {
+#hero h1, 
+#hero p, 
+#hero .btn-cta, 
+#hero img {
   position: relative;
   z-index: 1;
 }
@@ -42,20 +45,20 @@ body {
 #hero .logo {
   max-width: 220px;
   margin-bottom: 15px;
-  /*distancia do topo*/
   margin-top: -40px;
 }
 
 #hero h1 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
   font-size: 2.5rem;
   margin-bottom: 20px;
   margin-top: -15px;
-  font-weight: bold;
 }
 
 #hero h2 {
   position: relative;
-  color: white;
+  color: #fff;
   font-size: 1.6rem;
   margin-bottom: 25px;
 }
@@ -68,27 +71,25 @@ body {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 5px solid #FF6F61;
-  box-shadow: 0 0 25px rgba(255, 111, 97, 0.7);
+  border: 5px solid #e69217; /* caramelo */
+  box-shadow: 0 0 25px rgba(230, 146, 23, 0.7);
   animation: pulsar 3s infinite;
 }
 
 .foto-circular img {
-  /*centralizar foto*/
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*ajustar tamanho*/
   width: 150%;
   height: 150%;
   object-fit: cover;
 }
 
 @keyframes pulsar {
-  0% { box-shadow: 0 0 15px rgba(255, 111, 97, 0.6); }
-  50% { box-shadow: 0 0 35px rgba(255, 111, 97, 1); }
-  100% { box-shadow: 0 0 15px rgba(255, 111, 97, 0.6); }
+  0% { box-shadow: 0 0 15px rgba(230, 146, 23, 0.6); }
+  50% { box-shadow: 0 0 35px rgba(230, 146, 23, 1); }
+  100% { box-shadow: 0 0 15px rgba(230, 146, 23, 0.6); }
 }
 
 /* ===== TEXTO SOBRE MAYSA ===== */
@@ -98,41 +99,43 @@ body {
 }
 
 .sobre-maysa h2 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 25px;
-  color: #FF6F61;
+  color: #e69217; /* caramelo */
 }
 
 .sobre-maysa-conteudo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 50px;
 }
 
 .sobre-maysa-texto {
   max-width: 600px;
-  text-align: left;
   font-size: 1.1rem;
   line-height: 1.7;
-  /*texto centralizado*/
   margin: 0 20px;
   text-align: justify;
 }
 
 /* ===== GRUPO VIP ===== */
 .destaque {
-  background: linear-gradient(135deg, #FF6F61, #FF4081);
+  background: linear-gradient(135deg, #e69217, #f7cd14);
   color: #fff;
   border-radius: 15px;
   max-width: 800px;
   margin: 50px auto;
   padding: 60px 20px;
-  box-shadow: 0 0 30px rgba(255, 64, 129, 0.6);
+  box-shadow: 0 0 30px rgba(230, 146, 23, 0.6);
 }
 
 .destaque h2 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
@@ -145,7 +148,7 @@ body {
 /* ===== BOTÕES ===== */
 .btn-cta {
   display: inline-block;
-  background: #FF6F61;
+  background: #e69217; /* caramelo */
   color: #fff;
   padding: 14px 28px;
   border-radius: 12px;
@@ -156,7 +159,7 @@ body {
 }
 
 .btn-cta:hover {
-  background: #e35649;
+  background: #c57a12;
   transform: scale(1.08);
 }
 
@@ -168,107 +171,15 @@ body {
 /* ======= SEÇÃO ORÇAMENTO ======= */
 #orcamento {
   position: relative;
-  background: url('img/port1.jpg') center/cover no-repeat;
-  padding: 80px 20px;
-  border-radius: 12px;
-  overflow: hidden;
-  max-width: 1100px;
-  margin: 40px auto;
-  color: white;
-  text-align: center;
-}
-
-/* Overlay */
-#orcamento .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 75%;
-  background: linear-gradient(to bottom, #A0522D, rgba(255,200,0,0) 100%);
-}
-
-/* Conteúdo */
-#orcamento .conteudo {
-  position: relative;
-  padding: 40px;
-  font-size: 2rem;
-}
-
-#orcamento h2 {
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  margin-bottom: 65px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
-}
-
-/* Botão */
-#orcamento .botao {
-  margin-top: 125px;
-  font-family: 'Anton', sans-serif;
-  display: inline-block;
-  background-color: #A0522D;
-  color: white;
-  font-weight: bold;
-  padding: 20px 35px;
-  font-size: 1em;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0px 10px 10px #AF6F33;
-}
-
-#orcamento .botao:hover {
-  background-color: #e65b50;
-}
-
-/* ======= RESPONSIVIDADE ======= */
-@media (max-width: 768px) {
-  #orcamento {
-    padding: 60px 15px;
-  }
-
-  #orcamento h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-  }
-
-  #orcamento .botao {
-    margin-top: 60px;
-    font-size: 0.9rem;
-    padding: 15px 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  #orcamento {
-    padding: 40px 10px;
-  }
-
-  #orcamento h2 {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-  }
-
-  #orcamento .botao {
-    margin-top: 40px;
-    font-size: 0.8rem;
-    padding: 12px 20px;
-  }
-}
-
-/* ======= SEÇÃO ORÇAMENTO ======= */
-#orcamento {
-  position: relative;
   background: url('../img/port1.jpg') center/cover no-repeat;
-  padding: 50px 20px;   /* reduz o espaço interno */
   padding: 80px 20px;
   border-radius: 12px;
   overflow: hidden;
   max-width: 1100px;
   margin: 40px auto;
-  color: white;
+  color: #fff;
   text-align: center;
-  min-height: 300px;    /* evita que fique exagerado */
+  min-height: 300px;
 }
 
 /* Overlay */
@@ -277,7 +188,7 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 75%;
-  background: linear-gradient(to bottom, #A0522D, rgba(255,200,0,0) 100%);
+  background: linear-gradient(to bottom, #e69217, rgba(255,200,0,0) 100%);
 }
 
 /* Conteúdo */
@@ -291,7 +202,7 @@ body {
   font-family: 'Anton', sans-serif;
   font-weight: bold;
   margin-bottom: 65px;
-  margin-top: -55px; /* reduz o espaço acima */
+  margin-top: -55px;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
@@ -300,7 +211,7 @@ body {
   margin-top: 20px;
   font-family: 'Anton', sans-serif;
   display: inline-block;
-  background-color: #A0522D;
+  background-color: #e69217;
   color: white;
   font-weight: bold;
   padding: 20px 35px;
@@ -308,48 +219,27 @@ body {
   border-radius: 8px;
   text-decoration: none;
   transition: 0.3s;
-  box-shadow: 0px 10px 10px #AF6F33;
+  box-shadow: 0px 10px 10px #f7cd14;
 }
 
 #orcamento .botao:hover {
-  background-color: #e65b50;
+  background-color: #c57a12;
 }
 
-/* ======= RESPONSIVIDADE ======= */
-@media (max-width: 768px) {
-  #orcamento {
-    padding: 60px 15px;
-  }
-
-  #orcamento h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-  }
-
-  #orcamento .botao {
-    margin-top: 60px;
-    font-size: 0.9rem;
-    padding: 15px 25px;
-  }
+/* ===== FOOTER ===== */
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border-top: 2px solid #e69217;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
-
-@media (max-width: 480px) {
-  #orcamento {
-    padding: 40px 10px;
-  }
-
-  #orcamento h2 {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-  }
-
-  #orcamento .botao {
-    margin-top: 40px;
-    font-size: 0.8rem;
-    padding: 12px 20px;
-  }
-}
-
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
@@ -360,5 +250,36 @@ body {
   .sobre-maysa-texto {
     text-align: center;
   }
+
+  #orcamento {
+    padding: 60px 15px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  #orcamento .botao {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    padding: 15px 25px;
+  }
 }
 
+@media (max-width: 480px) {
+  #orcamento {
+    padding: 40px 10px;
+  }
+
+  #orcamento h2 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+
+  #orcamento .botao {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    padding: 12px 20px;
+  }
+}
