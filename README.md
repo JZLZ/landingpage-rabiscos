@@ -16,8 +16,13 @@ Landing page oficial do **Rabiscos da Maysa**, um curso de pintura em parede cri
 - **Git/GitHub** para versionamento
 
 ## 📷 Identidade Visual
-- Logo em **branco** e **rosa coral (#FF6F61)**  
+
+- Logo em **branco** e **caramelo** (#e69217)
 - Favicon personalizado
+- Paleta de cores principal: preto (#000), caramelo (#e69217), amarelo (#f7cd14), branco (#fff)
+- Tipografia: 'Anton' para títulos e 'Segoe UI', Arial, sans-serif para textos
+- Botões com efeito hover e destaque em caramelo
+- Fundo das seções: imagens com overlay e degradê em tons de caramelo/amarelo
 
 ## 📂 Estrutura do Projeto
 ```bash
