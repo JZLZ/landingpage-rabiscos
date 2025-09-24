@@ -2,6 +2,8 @@
 
 Landing page oficial do **Rabiscos da Maysa**, um curso de pintura em parede criado para jovens e mulheres que buscam aprender uma nova habilidade artística ou transformar a arte em fonte de renda.
 
+🌐 **Acesse online:** [rabiscosdamaysa.com.br](https://rabiscosdamaysa.com.br)
+
 ## 🚀 Funcionalidades
 - Layout moderno, responsivo e atrativo
 - Identidade visual personalizada
@@ -14,6 +16,7 @@ Landing page oficial do **Rabiscos da Maysa**, um curso de pintura em parede cri
 - **CSS3**
 - **JavaScript**
 - **Git/GitHub** para versionamento
+- **GitHub Pages** para hospedagem  
 
 ## 📷 Identidade Visual
 
@@ -30,5 +33,6 @@ Landing page oficial do **Rabiscos da Maysa**, um curso de pintura em parede cri
  ┣ 📂 img          # imagens, favicon e logo
  ┣ 📂 css          # estilos
  ┣ 📂 js           # scripts
+ ┣ 📂 video        # para videos
  ┣ 📜 index.html   # página principal
  ┗ 📜 README.md

@@ -144,6 +144,46 @@ body {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
+/* LINK DE INSCRIÇÃO */
+#INSCRIÇÃO {
+  display: flex;
+  justify-content: center;  /* centraliza horizontalmente */
+  align-items: center;      /* alinha verticalmente */
+  gap: 110px;                /* espaço entre os blocos */
+  padding: 20px;
+  flex-wrap: wrap;          
+}
+
+.bloco_destaque {
+  background: linear-gradient(135deg, #e69217, #f7cd14);
+  color: #fff;
+  border-radius: 15px;
+  padding: 60px 20px;
+  box-shadow: 0 0 30px rgba(230, 146, 23, 0.6);
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.bloco_destaque h2 {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.bloco_destaque p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.bloco_destaque a {
+  font-size: 1.5rem;
+  padding: 18px 36px;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+}
+
 
 /* ===== BOTÕES ===== */
 .btn-cta {

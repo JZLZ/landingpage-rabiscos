@@ -1,17 +1,16 @@
-// Modal do formulário
-const modal = document.getElementById("modal");
+// Força o som depois de qualquer interação do usuário
+function habilitarSom() {
+  const video = document.getElementById("meuVideo");
 
-function abrirModal() {
-  modal.style.display = "flex";
-}
-
-function fecharModal() {
-  modal.style.display = "none";
-}
-
-// Fechar ao clicar fora do conteúdo
-window.onclick = function(event) {
-  if(event.target == modal) {
-    fecharModal();
+  if (video) {
+    video.muted = false;
+    video.play().catch((err) => {
+      console.log("Navegador bloqueou autoplay com som:", err);
+    });
+    // Remove o listener depois da primeira ativação
+    document.removeEventListener("click", habilitarSom);
   }
 }
+
+// Listener só uma vez → na primeira interação
+document.addEventListener("click", habilitarSom);
