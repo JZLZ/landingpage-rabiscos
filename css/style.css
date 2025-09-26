@@ -18,6 +18,59 @@ body {
   padding: 80px 20px;
 }
 
+/* Navbar */
+.navbar {
+  position: absolute;
+  top:0; left:0; right:0;
+  display: flex;
+  justify-content: right;
+  padding: 20px 45px;
+  z-index: 1000;
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.navbar .logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Ícones */
+.nav-icons {
+  display: flex; 
+  align-items: left;
+}
+
+.nav-icons a {
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.nav-icons a:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+/* SVGs */
+.nav-icons svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+
 /* ===== HERO ===== */
 #hero {
   background: url('../img/port4.jpeg') no-repeat center center/cover;
